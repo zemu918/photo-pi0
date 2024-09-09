@@ -1,3 +1,3 @@
-DATA_DIR = "/home/lhl/photon-jet/data"
-MODEL_DIR = "/home/lhl/photon-jet/models"
-OUTPUT_DIR = "/home/lhl/photon-jet/output"
+DATA_DIR = "/home/li/photo-pi0/data"
+MODEL_DIR = "/home/li/photo-pi0/models"
+OUTPUT_DIR = "/home/li/photo-pi0/output"

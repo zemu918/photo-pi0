@@ -34,12 +34,13 @@ def export_data(task_name):
         )
     
     s = [os.path.join(DATA_DIR, p) for p in [
-       # 'root/1pi01gam_single.h5',
-       # 'root/1pi0_single.h5',
-       # 'root/2pi0_single.h5',
-       # 'root/nogam_single.h5',
-         'root/signal_limit.h5',
-        f"root/{task_name}_limit.h5",
+      #   'h5/1pi01gam_extra.h5',
+      #   'h5/1pi0_extra.h5',
+      #   'h5/2pi0_extra.h5',
+      #   'h5/nogam_extra.h5',
+      #   'h5/3pi0_extra.h5',
+         'h5/1pi0_sim_deduct_pi.h5',
+        f"h5/{task_name}_deduct_pi.h5",
     ]]
     
     events = [1000, 1000, 1000]
@@ -100,7 +101,8 @@ def export_data(task_name):
 
 
 if __name__ == "__main__":
-    for task_name in ["1pi01gam"]: ###["nogam","2pi0","1pi01gam","1pi0"]:
+     for task_name in ["nogam_sim","signal_sim"]:
+    #for task_name in ["4pi0_chg","3pi0_chg","2pi0_chg","1pi01gam_chg","1pi0_chg"]:
         print(f"Exporting {task_name}...")
         export_data(task_name)
         print()
